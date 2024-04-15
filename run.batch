@@ -1,0 +1,2 @@
+cd  /Users/sudhansu/Desktop/Folder/MyProjects/Robot framework/UIAutomation
+ pabot --processes 2 --outputdir Results  tests\

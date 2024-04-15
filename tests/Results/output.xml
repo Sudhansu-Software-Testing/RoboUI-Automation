@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.19 on darwin)" generated="2024-04-14T21:18:45.485213" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc1" source="/Users/sudhansu/Desktop/Folder/MyProjects/Robot framework/UIAutomation/tests/tc1.robot">
+<test id="s1-t1" name="Login Test" line="10">
+<kw name="open Application" owner="loginkeyword">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-14T21:18:45.561612" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<status status="PASS" start="2024-04-14T21:18:45.561485" elapsed="7.816955"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-14T21:18:53.379012" elapsed="0.109858"/>
+</kw>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-04-14T21:18:45.560984" elapsed="7.928455"/>
+</kw>
+<kw name="Enter UserName" owner="loginkeyword">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-14T21:18:53.491818" level="INFO">Typing text 'mercury' into text field 'name:userName'.</msg>
+<arg>${btn_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-14T21:18:53.491415" elapsed="0.140596"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2024-04-14T21:18:53.490485" elapsed="0.141623"/>
+</kw>
+<kw name="Enter password" owner="loginkeyword">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-14T21:18:53.632855" level="INFO">Typing text 'mercury' into text field 'name:password'.</msg>
+<arg>${btn_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-14T21:18:53.632724" elapsed="0.035320"/>
+</kw>
+<arg>${pwd}</arg>
+<status status="PASS" start="2024-04-14T21:18:53.632286" elapsed="0.035855"/>
+</kw>
+<kw name="Login" owner="loginkeyword">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-14T21:18:53.668598" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
+<arg>${btn_login}</arg>
+<doc>Clicks button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-14T21:18:53.668494" elapsed="1.447474"/>
+</kw>
+<status status="PASS" start="2024-04-14T21:18:53.668309" elapsed="1.447748"/>
+</kw>
+<kw name="close browser" owner="loginkeyword">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-04-14T21:18:55.116425" elapsed="0.068386"/>
+</kw>
+<status status="PASS" start="2024-04-14T21:18:55.116226" elapsed="0.068679"/>
+</kw>
+<status status="PASS" start="2024-04-14T21:18:45.560696" elapsed="9.624342"/>
+</test>
+<status status="PASS" start="2024-04-14T21:18:45.485870" elapsed="9.699470"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc1">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
